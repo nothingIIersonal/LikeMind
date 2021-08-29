@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LikeMind</string>
+    <string name="auth_activity_label">Authorization</string>
+    <string name="login_TV_text">Login:</string>
+    <string name="password_TV_text">Password:</string>
+    <string name="auth_error">Authorization failed!</string>
+    <string name="auth_success">Success!</string>
+    <string name="create_account_BTN_text">CREATE ACCOUNT NOW!</string>
+    <string name="create_account_TV_text">Do not have an account? Create it now!</string>
+    <string name="password_reg_rep_TV_text">Repeat password:</string>
+
+    <string name="go_to_main_btn_text">Go ahead!</string>
+    <string name="about_me_tab">About Me</string>
+    <string name="events_map_tab">Events Map</string>
+    <string name="nickname_TV_text">Identify yourself:</string>
+    <string name="describe_TV_text">Describe yourself:</string>
+    <string name="contacts_TV_text">Leave your contacts</string>
+    <string name="phone_TV_text">Write your phone number:</string>
+    <string name="email_TV_text">Write your email address:</string>
+    <string name="save_BTN_text">SAVE</string>
+    <string name="create_event_BTN_text">Create event!</string>
+    <string name="log_out_BTN_text">Log Out</string>
+    <string name="back_to_login_BTN_text">Back To Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="aboutMe_blank_fragment">About Me:</string>
+    <string name="eventsMap_blank_fragment">Events Map:</string>
+</resources>

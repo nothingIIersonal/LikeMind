@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AboutMeFragment"
+tools:ignore="MissingDefaultResource">
+
+<!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/about_me_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="550dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/about_me_tab"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nickname_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/nickname_TV_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/about_me_GL" />
+
+    <TextView
+        android:id="@+id/describe_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/describe_TV_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/about_me_GL" />
+
+    <TextView
+        android:id="@+id/contacts_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/contacts_TV_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contacts_GL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/about_me_GL" />
+
+    <TextView
+        android:id="@+id/email_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/email_TV_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contacts_GL" />
+
+    <EditText
+        android:id="@+id/email_PT"
+        android:layout_width="141dp"
+        android:layout_height="43dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/phone_PT"
+        app:layout_constraintTop_toBottomOf="@+id/phone_PT" />
+
+    <TextView
+        android:id="@+id/phone_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone_TV_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contacts_GL" />
+
+    <EditText
+        android:id="@+id/describe_MT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="1"
+        app:layout_constraintStart_toStartOf="@+id/nickname_PT"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_PT" />
+
+    <EditText
+        android:id="@+id/phone_PT"
+        android:layout_width="141dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="70dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintStart_toEndOf="@+id/phone_TV"
+        app:layout_constraintTop_toTopOf="@+id/contacts_GL" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/about_me_GL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <EditText
+        android:id="@+id/nickname_PT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/nickname_TV"
+        app:layout_constraintTop_toTopOf="@+id/about_me_GL" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/contacts_GL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64476883" />
+
+    <Button
+        android:id="@+id/save_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_BTN_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_PT"
+        app:layout_constraintTop_toTopOf="@+id/contacts_GL" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

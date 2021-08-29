@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+    <Button
+        android:id="@+id/go_to_main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_main_btn_text"
+        app:layout_constraintEnd_toEndOf="@+id/password_PT"
+        app:layout_constraintTop_toBottomOf="@+id/password_PT" />
+
+    <EditText
+        android:id="@+id/password_PT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/login_PT"
+        app:layout_constraintStart_toStartOf="@+id/login_PT"
+        app:layout_constraintTop_toBottomOf="@+id/login_PT" />
+
+    <EditText
+        android:id="@+id/login_PT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/login_TV"
+        app:layout_constraintEnd_toEndOf="@+id/logo_view"
+        app:layout_constraintStart_toEndOf="@+id/login_TV"
+        app:layout_constraintTop_toTopOf="@+id/login_TV" />
+
+    <TextView
+        android:id="@+id/login_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_TV_text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/logo_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/password_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/password_TV_text"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/login_TV"
+        app:layout_constraintTop_toBottomOf="@+id/login_TV" />
+
+    <TextView
+        android:id="@+id/info_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:textColor="#000000"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/go_to_main_btn"
+        app:layout_constraintTop_toBottomOf="@+id/password_PT" />
+
+    <ImageView
+        android:id="@+id/logo_view"
+        android:layout_width="367dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_PT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/create_account_BTN"
+        android:layout_width="242dp"
+        android:layout_height="37dp"
+        android:text="@string/create_account_BTN_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/create_account_TV"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/create_account_TV"
+        app:layout_constraintTop_toBottomOf="@+id/create_account_TV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/create_account_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/create_account_TV_text"
+        app:layout_constraintStart_toStartOf="@+id/password_TV"
+        app:layout_constraintTop_toBottomOf="@+id/password_TV" />
+
+    <fragment
+        android:id="@+id/reg_fragment"
+        android:name="com.example.likemind.RegistrationFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
